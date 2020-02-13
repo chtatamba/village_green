@@ -1,0 +1,5 @@
+com\afpa\village_green\DAL\Produit.class
+com\afpa\village_green\controllers\LoginController.class
+com\afpa\village_green\controllers\AccueilController.class
+com\afpa\village_green\App.class
+com\afpa\village_green\DAL\ProduitDao.class

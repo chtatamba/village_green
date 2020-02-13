@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.afpa.village_green.controllers.LoginController">
+   <effect>
+      <Blend />
+   </effect>
+   <children>
+      <Group layoutX="302.0" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="658.0" AnchorPane.rightAnchor="658.0" AnchorPane.topAnchor="360.0">
+         <children>
+            <Ellipse disable="true" layoutX="366.0" layoutY="265.0" radiusX="302.0" radiusY="180.0" stroke="BLACK" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#685f19" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Ellipse>
+            <Label layoutX="325.0" layoutY="158.0" prefHeight="40.0" prefWidth="84.0" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="204.0" layoutY="221.0" prefHeight="17.0" prefWidth="91.0" text="Utilisateur:" />
+            <Label layoutX="191.0" layoutY="270.0" prefHeight="17.0" prefWidth="91.0" text="Mot de passe:" />
+            <TextField fx:id="txt_login" layoutX="276.0" layoutY="217.0" prefHeight="25.0" prefWidth="185.0" />
+            <PasswordField fx:id="txt_pwd" layoutX="276.0" layoutY="266.0" prefWidth="185.0" />
+            <Label fx:id="error_login" layoutX="276.0" layoutY="242.0" prefHeight="17.0" prefWidth="185.0" />
+            <Label fx:id="error_pwd" layoutX="276.0" layoutY="291.0" prefHeight="17.0" prefWidth="185.0" />
+            <Button fx:id="btn_valider" layoutX="279.0" layoutY="339.0" mnemonicParsing="false" onAction="#signin" prefHeight="25.0" prefWidth="71.0" text="Valider" />
+            <Button fx:id="btn_annuler" layoutX="390.0" layoutY="339.0" mnemonicParsing="false" onAction="#annuler" prefHeight="25.0" prefWidth="71.0" text="Annuler" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
